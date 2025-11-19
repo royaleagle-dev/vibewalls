@@ -1,6 +1,6 @@
 import HeaderComponent from '../components/HeaderComponent'
 import FooterComponent from '../components/FooterComponent'
-import HomepageContent from '../contents/HomePageContent'
+import HomepageContent from '../contents/HomepageContent'
 
 
 const Homepage = () => {
