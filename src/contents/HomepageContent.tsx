@@ -1,6 +1,7 @@
 import {useState, useEffect } from 'react';
 //import React from 'react';
-import apiBase from '../apiBase';
+//import apiBase from '../apiBase';
+import axios from 'axios';
 
 interface RandomImage{
     image_link: string;
@@ -15,8 +16,8 @@ export default function HomepageContent() {
     useEffect(() => {    
         const fetchRandomImage = async() => {
             try{
-                const api = apiBase;
-                const response = await api.get('/index/getRandom');
+                //const api = apiBase;
+                const response = await axios.get('https://raspy-mouse-3251.royaleagle-dev.workers.dev/');
                 setRandomImage(response.data.data);
                 console.log(response.data.data);
                 
